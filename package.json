@@ -21,11 +21,15 @@
   },
   "homepage": "https://github.io.MariaShebeko/goit-js-hw-13-image-finder",
   "dependencies": {
+    "basiclightbox": "^5.0.4",
     "gh-pages": "^3.2.3",
     "handlebars": "^4.7.7",
     "material-design-icons": "^3.0.1",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "devDependencies": {
+    "pnotify": "^5.2.0"
   }
 }

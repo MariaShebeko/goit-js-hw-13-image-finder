@@ -7,7 +7,7 @@ export default class PhotoAPIService {
     this.page = 1;
   }
 
-  fetchPhotoes() {
+  fetchPhotos() {
     const url = `${BASE_URL}/?image_type=photo&orientation=horizontal&q=${this.searchQuery}&page=${this.page}&per_page=12&key=${API_KEY}`;
 
     return fetch(url)
@@ -15,6 +15,9 @@ export default class PhotoAPIService {
       .then((data) => {
         this.incrementPage();
         return data.hits;
+      })
+      .catch((error) => {
+        console.log(error);
       });
   }
 
